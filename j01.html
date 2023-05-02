@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=dge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        .pink{
+            background-color: pink;
+        }
+    </style>
+    </head>
+    <title>j01</title>
+    <body>
+        <button class='pink'>按鈕01</button>
+        <button>按鈕02</button>
+        <button>按鈕03</button>
+        <button>按鈕04</button>
+        <script>
+            let btns=document.querySelectorAll('button')
+            for(i=0;i<btns.length;i++){
+                btns[i].addEventListener('click',function(){
+                    document.querySelector('.pink').className=''
+                    this.className="pink"
+                })
+            }
+        </script>
+    </body>
+</html>
