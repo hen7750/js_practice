@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numArr=[4,66,13,98,564,267]
+        let max=numArr[0]
+        let min=numArr[1]
+        for(i=0;i<numArr.length;i++){
+            if(max<numArr[i]){
+                max=numArr[i]
+            }
+            if(min>numArr[i]){
+                min=numArr[i]
+            }
+        }
+        document.write(max)
+        document.write('</br>')
+        document.write(min)
+    </script>
+</body>
+</html>
