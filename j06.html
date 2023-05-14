@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num_input=+prompt('please input number !')
+        console.log(typeof(num_input));
+        
+       switch(num_input){
+        case num_input < 60:
+            document.write('不及格');
+            break
+        case num_input >60 && num_input < 80: 
+            document.write('及格但還須努力')
+            break
+        case num_input > 90:
+            document.write('very good') 
+        default:
+            document.write('超乎預期了!!!!')
+            break
+
+       }
+
+    </script>
+</body>
+</html>

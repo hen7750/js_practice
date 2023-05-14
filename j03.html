@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        margin: 0 auto;
+        text-align: center;
+    }
+    table,th,td{
+        border: 1px solid #000;
+       
+        text-align: center;
+    }
+    th{
+        height: 10px;
+        padding: 5px 50px;
+    }
+    h2{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h2>訂購單</h2>
+    
+
+    <script>
+        let product = prompt("請輸入品名")
+        let price = +prompt("請輸入單價")
+        let amount = +prompt("請輸入數量")
+        let addr = prompt("請輸入地址")
+        let total=price*amount
+        
+        document.write(`
+        <table>
+        <tr>
+            <th>商品</th>
+            <th>單價</th>
+            <th>數量</th>
+            <th>總價</th>
+            <th>地址</th>
+        </tr>
+        <tr>
+            <td id="product">${product}</td>
+            <td id="price">${price}</td>
+            <td id="amount">${amount}</td>
+            <td id="total">${total}</td>
+            <td id="addr">${addr}</td>
+        </tr>
+        </table>    
+        `)
+
+    </script>
+</body>
+</html>
