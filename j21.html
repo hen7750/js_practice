@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getMxAndMin(inputArr){
+            let maxValue=inputArr[0]
+            let minValue=inputArr[0]
+            for(let i=0;i<inputArr.length;i++){
+                
+                if(maxValue<inputArr[i]){
+                    maxValue=inputArr[i]
+                }
+                if(minValue>inputArr[i]){
+                    minValue=inputArr[i]
+                }
+            }
+            let MaxAndMin=[maxValue,minValue]
+            return MaxAndMin
+        }
+
+        alert(getMxAndMin([12,7,44,22,155]))
+
+    </script>
+</body>
+</html>
