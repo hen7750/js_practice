@@ -7,16 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-  <script>
-    let ironMan={
-        age:16,
-        motion:'walk',
-        say(msg){
-          alert(msg)
+    <script>
+        let Cat={
+            color:'red',
+            weight:'4kg',
+            action:'sleep'
         }
-    }
-    ironMan.hobby='eat'
-    ironMan.say('henry win!!')
-  </script>  
+
+        for(let k in Cat){
+            // document.write(k)
+            document.write(Cat[k])
+            document.write('</br>')
+        }
+    </script>
 </body>
 </html>
