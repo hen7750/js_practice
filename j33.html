@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function fn01(){
+            console.log('test01');
+        } 
+        function fn02(){
+            console.log('test02');
+        } 
+        function fn03(){
+            console.log('test03');
+            clearInterval(sid01)
+        } 
+        let sid01=setInterval(fn01,1000)
+        let sid02=setInterval(fn02,1000)
+        let sid03=setInterval(fn03,5000)
+        
+        console.log(sid01);
+        console.log(sid02);
+        console.log(sid03);
+
+        
+    </script>
+
+</body>
+</html>
