@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div01{
+            height: 200px;
+            width: 350px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="div01" id="div01"></div>
+    <button id="b01">開始</button>
+    <button id="b02">結束</button>
+    <script>
+        let d01=document.querySelector('#div01')
+        let b01=document.querySelector('#b01')
+        let b02=document.querySelector('#b02')
+        let rs=0
+        let rrNumber=0
+        let arrMan=['台北','新竹','基隆','桃園','高雄']
+        b01.addEventListener('click',function(){
+            rs=setInterval(function(){
+            rrNumber=parseInt(Math.random()*arrMan.length)
+            d01.innerHTML=arrMan[rrNumber]
+             },300)
+        })
+        b02.addEventListener('click',function(){
+            clearInterval(rs)
+            arrMan.splice(rrNumber,1)
+            console.log(arrMan);
+        })
+       
+    </script>
+</body>
+</html>
