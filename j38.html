@@ -30,6 +30,11 @@
             rrNumber=parseInt(Math.random()*arrMan.length)
             d01.innerHTML=arrMan[rrNumber]
              },300)
+            if(arrMan.length===1){
+                // b01.disabled=true
+                // b02.disabled=true
+                b01.disabled=b02.disabled=true
+            }     
         })
         b02.addEventListener('click',function(){
             clearInterval(rs)
