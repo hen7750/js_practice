@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box01{
+            position:relative;
+            background-color: pink;
+            height: 220px;
+            width: 220px;
+                } 
+    
+        .box02{
+            background-color: skyblue;
+            position:absolute;
+            height: 20px;
+            width: 20px;
+            top:10px;
+            right:20px;
+            cursor: pointer;
+                }
+    </style>
+</head>
+
+<body>
+    <div class="box01">
+        <div class="box02">x</div>
+    </div>
+    <script>
+        let b01=document.querySelector('.box01')
+        let b02=document.querySelector('.box02')
+        
+        b02.addEventListener('click',function(){
+            b01.style.display='none'
+        })
+    </script>
+</body>
+</html>
