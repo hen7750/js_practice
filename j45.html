@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const now = +new Date()
+        // console.log(tt);
+        const last = +new Date('2023-5-21 20:00:00')
+
+        const count = (last-now) / 1000
+        // let d=parseInt(count / 60 / 60 / 24) 
+        let h=parseInt(count / 60 / 60 % 24) 
+        h = h < 10 ? '0'+h : h
+        let m=parseInt(count / 60 % 60) 
+        m = m < 10 ? '0'+m : m
+        let s=parseInt(count % 60) 
+        s = s < 10 ? '0'+s : s
+        // console.log(d, h, m, s);
+        console.log(h, m, s);
+    </script>
+
+</body>
+</html>
