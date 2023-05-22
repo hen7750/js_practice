@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let ob01={
+            age:14,
+            name:'henry',
+            addr:'taiwan'
+        }
+
+        localStorage.setItem('ob01',JSON.stringify(ob01))
+        console.log('轉換後');
+        ob01=localStorage.getItem('ob01')
+        console.log(JSON.parse(ob01));
+    </script>
+</body>
+</html>
