@@ -60,9 +60,14 @@
         //所以一個完整的表達式是
         ///^09[0-9]{8}$/ 或 /^09\d{8}$/
 
-        //再換換另外一些常見的例子
-
-        
+        //[^] 尖括號在中括號裡面的表示not (取反的意思)
+        // const reg=/[^\d]{3,}/
+        // const s_test='abc'
+        // console.log(reg.test(s_test));
+        // . 點號 (匹配除換行符之外的任何單個字符)
+        const reg=/./
+        const s_test='\n'
+        console.log(reg.test(s_test));
     </script>
 </body>
 </html>

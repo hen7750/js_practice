@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .right{
+            color: green;
+            background: url(./img/right.jpg) no-repeat left; 
+        }
+        .wrong{
+            color: red;
+            background: url(./img/wrong.png) no-repeat left;
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <span></span>
+    
+
+    <script>
+        
+        const reg=/09[0-9]{8}/
+        const input=document.querySelector('input')
+        const spanTag=input.nextElementSibling
+        input.addEventListener('blur',function(){
+            if(reg.test(this.value)){
+                    spanTag.innerHTML='輸入正確'
+                    spanTag.classList.add('right')
+                }else{
+                    spanTag.innerHTML='格式錯誤'
+                    spanTag.classList.add('wrong')
+                }
+        })
+        
+    </script>
+</body>
+</html>
