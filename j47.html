@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const s01='哈'
+        const s02='哈哈'
+        const s03='哈哈哈'
+        const s04='哈哈哈哈'
+        const s05='哈哈哈哈哈'
+        const s06='哈哈哈哈哈哈'
+        //量詞類=================
+        //一次或多次 
+        // const reg=/哈+/
+        //零次或一次
+        // const reg=/^哈?$/
+        //零次或一次
+        // const reg=/^哈?$/
+        // 重複n次
+        // const reg=/^哈{3}$/
+        // 重複n次以上
+        // const reg=/^哈{2,}$/
+        // console.log(reg.test(s03));
+        // 重複n-m以上
+        // const reg=/^哈{2,5}$/
+        // console.log(reg.test(s06));
+        //字符類=================
+        //[abc]  只能有一個字符 a或b或c
+        // const s07='a'
+        // const s08='b'
+        // const s09='c'
+        // const s10='abc'
+        // const reg=/^[abc]$/
+        // console.log(reg.test(s09));
+
+        
+        //[a-z]  a-z範圍 只有一個字(數量) 且區分大小寫
+        // const s11='e'
+        // const reg=/^[a-zA-Z0-9]$/
+        // console.log(reg.test(s11));
+
+        // 例如: 騰訊QQ號的規則是  10000開始
+        // const s12='10056'
+        // const reg=/^[1-9][0-9]{4,}$/
+        // console.log(reg.test(s12));
+        
+        //範例++++++++++++++++++++++++++++
+        //台灣手機是09開頭
+        //以表達式的寫法是/^09/
+
+        //後面是任意8個數字結尾
+        ///[0-9]{8}$/ 也能夠這樣寫 /\d{8}$/
+
+        //所以一個完整的表達式是
+        ///^09[0-9]{8}$/ 或 /^09\d{8}$/
+
+        //再換換另外一些常見的例子
+
+        
+    </script>
+</body>
+</html>
