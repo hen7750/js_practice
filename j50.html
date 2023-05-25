@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="test">
+    <script>
+        //第1種寫法--------------------
+        // const fn01 = () => {
+        //     console.log('test arrow function !!');
+        // }
+        // fn01()
+        //第2種寫法--------------------
+        // const fn02 = (x) => {
+        //     console.log(x); 
+        // }
+        // fn02(5)
+        //第3種寫法--------------------
+        // const fn03 = x => {
+        //     console.log(x); 
+        // }
+        // fn03(3)
+        //第4種寫法  (前提是只有一個參數時)
+        // const fn04 = x => console.log(x);
+        // fn04(4)
+
+        //第5種寫法  (前提是只有一個參數時)
+        // const fn05 = x => {
+        //     return x+x
+        // }
+        // console.log(fn05(5))
+        
+        //第6種寫法  (前提是只有一行代碼，一個參數)
+        // const fn06 = x => x+x
+        // console.log(fn06(6))
+
+        //第7種寫法  (如果有2個參數，小括號就不能省略)
+        // const fn07 = (x,y) => x+y
+        // console.log(fn07(2,9))
+
+        //更簡潔的語法 
+        // const form=document.querySelector('form')
+        // form.addEventListener('click',ev =>ev.preventDefault())
+
+        // const input=document.querySelector('input')
+        // input.addEventListener('click',ev =>alert('test'))
+        
+        //特殊狀況 箭頭函數右側一般適用大括號包住，但是如果裡面是包 對象，那
+        //大括號就要改成小括號(因為衝突了)
+        const fn = (uname) => ({ name: uname})
+        console.log(fn('劉德華'))
+    </script>
+</body>
+</html>

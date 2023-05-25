@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 預設this就是windows
+        // function test(){
+        //     alert('test')
+        // }
+        // // console.log(this);
+        // this.test()
+        
+        //自動立即執行函數
+        // (function test(x,y){
+        // //   alert('test')
+        //      alert(x+y)
+        // })(1,2)
+        
+
+        //普通的函數 this指向 對象
+        // const obj={
+        //     name:'henry',
+        //     sayHi: function(){
+        //         console.log(this);
+        //     }
+        // }
+        // obj.sayHi()
+
+        //箭頭函數的this則是指向作用域上一層沿用的this
+        //此範例就是 windows
+        // const fn = () => {
+        //   console.log(this);
+        // }
+        // fn()
+
+        const obj ={
+          uname: 'henry張亨利',
+          sayHi: () =>{
+               console.log(this);
+          }
+        }
+        obj.sayHi()
+    </script>
+</body>
+</html>
