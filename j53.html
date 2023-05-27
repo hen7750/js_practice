@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const obj={
+            eye:2,
+            head:1,
+            family: {
+                baby: '小Henry'
+            }
+        }
+        //淺拷貝 範例01 複製出的對象  修改屬性不影響被複製的對象
+        // const copy01={...obj}
+        // console.log(copy01);
+        // copy01.eye=3
+        // console.log(copy01);
+        // console.log(obj);
+
+        //淺拷貝 範例02 複製出的對象  修改屬性不影響被複製的對象
+        // const o={}
+        // Object.assign(o,obj)
+        // o.eye=5
+        // console.log(o);
+        // console.log(obj);
+
+        //淺拷貝(只拷貝淺淺的一層) 範例03 複製出的對象 如果再深一層 就會有問題會修改到原始被複製對象
+        const o={}
+        Object.assign(o,obj)
+        o.eye=5
+        o.family.baby= '老Henry'
+        console.log(o);
+        console.log(obj);
+
+
+    </script>
+</body>
+</html>
